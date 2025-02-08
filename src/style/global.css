@@ -1,16 +1,3 @@
-@import url(header.css);
-@import url(information.css);
-@import url(map.css);
-@import url(footer.css);
-@import url(baner.css);
-@import url(modal.css);
-
-
-@font-face {
-    font-family: Gilroy;
-    src: url(./fonts/Gilroy-Light.otf);
-}
-
 * {
     font-family: "Gilroy", serif;
     font-weight: 400;
@@ -25,6 +12,12 @@ body {
     width: 85%;
     margin: auto;
 }
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url(./style/fonts/Gilroy-Light.otf);
+}
+
 
 img {
     display: block;

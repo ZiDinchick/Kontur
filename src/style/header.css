@@ -25,7 +25,7 @@
     cursor: pointer;
 }
 
-.link {
+.link nav {
     display: flex;
     gap: 2rem;
     margin-top: 10px;
@@ -100,7 +100,6 @@
     transition: right 0.3s ease-in-out;
 }
 
-/* --- Активный класс для отображения меню --- */
 .side-menu.show {
     width: 100vw;
     height: 100vh;

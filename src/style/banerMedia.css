@@ -1,0 +1,143 @@
+@media (max-width: 666px) {
+    #first-slide {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #second-slide {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #last-slide {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .buy p {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        text-align: center;
+    }
+
+    .slider h2 {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 24px;
+        text-align: center;
+    }
+
+    .slider h2 b {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 24px;
+        text-align: center;
+    }
+
+    .slider h2 span {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 24px;
+        text-align: center;
+    }
+
+    .buy button {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 19.34px;
+        text-align: center;
+        padding: 5px 10px;
+    }
+
+    .baner-img {
+        margin-top: 3rem;
+        max-width: 200px;
+    }
+
+    .slider .slick-next {
+        display: none !important;
+    }
+
+    .slider .slick-prev {
+        display: none !important;
+    }
+}
+
+
+@media (max-width:1370px) {
+    .slider div:not(.buy, .container_slider, .baner-img) {
+        display: flex;
+        justify-content: space-between;
+        padding: unset;
+    }
+
+    #first-slide,
+    #last-slide,
+    #second-slide {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .slider {
+        background-image: url(./svg/Maskgroup1.jpg);
+    }
+
+    .container_slider {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2rem;
+    }
+
+    .slider div {
+        padding: unset;
+    }
+
+    .buy {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .slider img {
+        max-width: 70%;
+    }
+
+    .baner-img img {
+        padding: 0;
+        padding-bottom: 3rem;
+        margin: auto;
+    }
+
+    .baner-img {
+        margin-top: 2rem;
+    }
+
+    .buy p {
+        text-align: center;
+    }
+
+    .slider h2 {
+        text-align: center;
+    }
+
+    .slider h2 b {
+        text-align: center;
+    }
+
+    .slider h2 span {
+        text-align: center;
+    }
+
+    .buy button {
+        text-align: center;
+        width: max-content;
+        padding: 10px 1rem;
+    }
+
+
+}
