@@ -112,7 +112,7 @@ textarea {
 }
 
 .btn button::after {
-    content: url(./svg/Arrow\ 1.svg);
+    content: url(./svg/Arrow1.svg);
     margin-left: 10px;
     align-items: center;
 }
