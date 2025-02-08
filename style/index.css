@@ -1,0 +1,45 @@
+@import url(header.css);
+@import url(information.css);
+@import url(map.css);
+@import url(footer.css);
+@import url(baner.css);
+@import url(modal.css);
+
+
+@font-face {
+    font-family: Gilroy;
+    src: url(./fonts/Gilroy-Light.otf);
+}
+
+* {
+    font-family: "Gilroy", serif;
+    font-weight: 400;
+    font-size: 24px;
+    font-style: normal;
+    color: #22253B;
+    margin: 0;
+}
+
+body {
+    background-color: #F9F8FD;
+    width: 85%;
+    margin: auto;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 425px) {
+    body {
+        width: 95%;
+    }
+}
+
+@media (min-width: 1441px) {
+    body {
+        width: 1224px
+    }
+}

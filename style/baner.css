@@ -1,0 +1,270 @@
+.slider {
+    margin-top: 1rem;
+    background-image: url(./svg/Default.svg);
+    background-size: cover;
+    background-position: 10%;
+    border-radius: 2rem;
+}
+
+.slider h2 {
+    font-size: 46px;
+    font-weight: 500;
+    line-height: 46px;
+    width: 90%;
+}
+
+.slider h2 b {
+    color: #F15525;
+    font-size: 46px;
+    line-height: 46px;
+}
+
+.slider h2 span {
+    font-weight: bold;
+    font-size: 46px;
+    line-height: 46px;
+}
+
+.slider div:not(.buy, .container_slider, .baner-img) {
+    padding: 0.8rem 1.3rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+#second-slide button {
+    margin-top: 2rem;
+}
+
+#second-slide .buy {
+    margin-top: 2rem;
+}
+
+#second-slide h2 {
+    width: 55%;
+}
+
+#last-slide .buy {
+    margin-top: 2rem;
+}
+
+#last-slide button {
+    margin-top: 2rem;
+}
+
+.baner-img {
+    padding-right: 9%;
+    max-height: 100%;
+}
+
+.slider img {
+    max-width: unset;
+    object-fit: unset;
+}
+
+
+.buy {
+    margin-top: 1rem;
+    border-top: 1px solid #DEDEDE;
+    width: 50%;
+}
+
+
+.buy p {
+    padding-top: 1rem;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23px;
+    text-align: left;
+}
+
+.slider button {
+    scale: 2;
+}
+
+.buy button {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    background-color: #F15525;
+    border: none;
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    color: white;
+    scale: 1;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.buy button::after {
+    content: url(./svg/Arrow\ 1.svg);
+    margin-left: 10px;
+    align-items: center;
+}
+
+.buy button:hover {
+    background-color: #38BFF2;
+}
+
+.slick-next,
+.slick-prev {
+    z-index: 1000;
+}
+
+.slick-next {
+    padding-right: 2.2rem;
+}
+
+.slick-prev {
+    padding-left: 1.2rem;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: #F15525;
+}
+
+
+@media (max-width:1370px) {
+    .slider div:not(.buy, .container_slider, .baner-img) {
+        padding: unset;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #first-slide,
+    #last-slide,
+    #second-slide {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .slider {
+        background-image: url(svg/Mask\ group\ \(1\).jpg);
+    }
+
+    .container_slider {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2rem;
+    }
+
+    .slider div {
+        padding: unset;
+    }
+
+    .buy {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .slider img {
+        max-width: 70%;
+    }
+
+    .baner-img img {
+        padding: 0;
+        padding-bottom: 3rem;
+        margin: auto;
+    }
+
+    .baner-img {
+        margin-top: 2rem;
+    }
+
+    .buy p {
+        text-align: center;
+    }
+
+    .slider h2 {
+        text-align: center;
+    }
+
+    .slider h2 b {
+        text-align: center;
+    }
+
+    .slider h2 span {
+        text-align: center;
+    }
+
+    .buy button {
+        text-align: center;
+    }
+
+
+}
+
+@media (max-width: 666px) {
+    #first-slide {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #second-slide {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #last-slide {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .buy p {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        text-align: center;
+    }
+
+    .slider h2 {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 24px;
+        text-align: center;
+    }
+
+    .slider h2 b {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 24px;
+        text-align: center;
+    }
+
+    .slider h2 span {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 24px;
+        text-align: center;
+    }
+
+    .buy button {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 19.34px;
+        text-align: center;
+        padding: 5px 10px;
+    }
+
+    .baner-img {
+        margin-top: 3rem;
+        max-width: 200px;
+    }
+
+    .slider .slick-next {
+        display: none !important;
+    }
+
+    .slider .slick-prev {
+        display: none !important;
+    }
+}

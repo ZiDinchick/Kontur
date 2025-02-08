@@ -1,0 +1,140 @@
+.head-bar {
+    background: #FFFFFFE5;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10rem;
+    padding: 0.5rem;
+    margin-top: 1rem;
+}
+
+.menu_btn {
+    display: none;
+}
+
+.info {
+    display: flex;
+    gap: 2.3rem;
+    padding-left: 1rem;
+
+}
+
+.link span {
+    font-size: 13px;
+    font-weight: 400;
+    color: #22253B;
+    cursor: pointer;
+}
+
+.link {
+    display: flex;
+    gap: 2rem;
+    margin-top: 10px;
+}
+
+.number {
+    font-size: 16px;
+    padding-right: 1rem;
+    color: #38BFF2;
+    cursor: pointer;
+}
+
+.logo {
+    display: inline;
+    object-fit: none;
+}
+
+.side-menu {
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+    .number {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 23px;
+    }
+}
+
+@media (max-width:1025px) {
+    .head-bar .number {
+        padding: unset;
+    }
+
+    .info {
+        gap: 1rem
+    }
+
+    .link {
+        gap: 0.5rem;
+    }
+}
+
+@media (max-width:900px) {
+    .link {
+        display: none;
+    }
+
+    .menu_btn {
+        height: 1rem;
+        display: block;
+        padding-right: 1rem;
+        cursor: pointer;
+    }
+}
+
+
+
+.side-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 250px;
+    height: 100%;
+    background: #fff;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    transition: right 0.3s ease-in-out;
+}
+
+/* --- Активный класс для отображения меню --- */
+.side-menu.show {
+    width: 100vw;
+    height: 100vh;
+    z-index: 1001;
+    right: 0;
+}
+
+.close-btn {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+
+}
+
+.side-menu-link {
+    padding-top: 1rem;
+    ;
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+}
+
+.side-menu-link span {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+
+.show {
+    display: block;
+}

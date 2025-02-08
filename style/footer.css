@@ -1,0 +1,154 @@
+footer {
+    margin-top: 2rem;
+}
+
+.container_footer {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #D8D8D8;
+}
+
+.container_footer h2 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    color: #8E8E8E;
+    padding-bottom: 0.5rem;
+    ;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    gap: 0.6rem;
+}
+
+.icons svg {
+    cursor: pointer;
+}
+
+.left {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.right {
+    display: flex;
+    gap: 7rem;
+}
+
+.right p {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 13.57px;
+    padding-bottom: 1rem;
+    cursor: pointer;
+}
+
+.right p:last-child {
+    padding-bottom: 2rem;
+}
+
+.right .number {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23px;
+    padding-bottom: 0.6rem;
+}
+
+.right p:hover {
+    color: #F15525;
+}
+
+
+.copyright {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23px;
+    color: #8E8E8E;
+}
+
+.copyright div {
+    display: flex;
+    gap: 3.3rem;
+}
+
+.name {
+    display: flex;
+    gap: 0.5rem;
+    width: min-content;
+}
+
+@media (max-width:1000px) {
+    .right {
+        gap: 3rem;
+    }
+}
+
+@media (max-width:768px) {
+    .container_footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .container_footer p {
+        text-align: center;
+    }
+
+    .container_footer .number {
+        padding: 0 0 0.4rem;
+    }
+
+    .right {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .right p:last-child {
+        padding-bottom: 0;
+    }
+
+    .right div:last-child {
+        padding-bottom: 1.3rem;
+    }
+
+    .left h2 {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 19px;
+    }
+
+    .copyright {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.7rem;
+    }
+
+    .copyright p {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 23px;
+    }
+
+    .copyright div {
+        gap: 0.4rem;
+        flex-direction: column;
+    }
+
+    .copyright div p {
+        color: #F15525;
+    }
+}
+
+.icons svg :hover path:first-child {
+    fill: #F15525;
+}
